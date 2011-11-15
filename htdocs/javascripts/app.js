@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
 	/* Use this js doc for all application specific JS */
+	
+	// When the user votes, change the color of the selected option
+	
+	$('.boic_category li a.button').click(function(e) {
+		$options = $(this).parent('li').find('a.button');
+		$options.removeClass('blue').addClass('white');
+		$(this).removeClass('white').addClass('blue');
+	});
 
 	/* TABS --------------------------------- */
 	/* Remove if you don't need :) */

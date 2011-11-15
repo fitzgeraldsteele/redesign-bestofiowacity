@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Pizza Place",
+        "options": [
+            "Falbo Bros",
+            "Pagliai's",
+            "The Wedge",
+            "Wig and Pen"
+        ]
+    },
+	{
+        "name": "Ice Cream Shop",
+        "options": [
+            "Coldstone Cremery",
+            "Dairy Queen",
+            "Dane's Dairy",
+            "Heyn's",
+			"Whitey's"
+        ]
+    }
+]
