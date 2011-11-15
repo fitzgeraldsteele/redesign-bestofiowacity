@@ -38,10 +38,11 @@
 
 </head>
 <body>
+<header>
 	<!-- container -->
 	<div class="container">
 		<div class="row" >
-			<header>
+			
 				<div class="four columns ">			
 					<img src="images/mast_logo.gif" />
 				</div>
@@ -50,7 +51,8 @@
 						<a href="#">Previous Winners</a>
 					</div>
 				</nav>
-			</header>
+			
 		</div>
 	</div>
+</header>
 	<!-- container -->
