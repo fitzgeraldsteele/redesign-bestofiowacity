@@ -42,16 +42,9 @@
 	<!-- container -->
 	<div class="container">
 		<div class="row" >
-			
-				<div class="four columns ">			
-					<img src="images/mast_logo.gif" />
-				</div>
-				<nav class="eight columns ">
-						<a href="#">About</a>
-						<a href="#">Previous Winners</a>
-					</div>
-				</nav>
-			
+			<div class="four columns ">			
+				<img src="images/mast_logo.gif" />
+			</div>
 		</div>
 	</div>
 </header>
