@@ -15,7 +15,17 @@
             "Dairy Queen",
             "Dane's Dairy",
             "Heyn's",
-			"Whitey's"
+	    "Whitey's"
+        ]
+    },
+	{
+        "name": "Bank",
+        "options": [
+            "Hills Bank",
+            "MidWestOne",
+            "UI Community Credit Union",
+            "USBank",
+	    "Wells Fargo"
         ]
     }
 ]
