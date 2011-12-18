@@ -5,10 +5,40 @@ $(document).ready(function() {
 	// When the user votes, change the color of the selected option
 	
 	$('.boic_category li a.button').click(function(e) {
-		$options = $(this).parent('li').find('a.button');
+		e.preventDefault();
+		$selected = $(this).text();
+		$parent_li = $(this).parent('li');
+		$throbber = $parent_li.find('h4 img');
+		$throbber.show();
+		//Remove all the options
+		$options = $(this).parent('li').find('a.button, br').remove();
 		$options.removeClass('blue').addClass('white');
 		$(this).removeClass('white').addClass('blue');
+		
+		//Write in the new winner
+		$parent_li.append('<p><em><span style="font-size:1.1em;">'+$selected+'</span></em> <a href="#" class="add_comment">Add Comment</a></p>');
+		$parent_li.append('<div class="comment_area" style="display:none;"><textarea name="comment" rows="4" style="width:96%;"></textarea><p><a href="#" class="button blue save">Save</a> <a href="#" class="button white cancel">Cancel</a></p></div>');
+		// Make it look like we're saving data
+		setTimeout("$throbber.hide()", 1200);
 	});
+	
+	// Show the comment section
+	$('.add_comment').live('click',function(e) {
+		e.preventDefault();
+		$(this).parents('li').children('div').slideDown('slow')
+		
+	});
+	
+	// save/hide the comment section
+	$('div.comment_area a').live('click', function(e) {
+		e.preventDefault();
+		if ($(this).hasClass('save')) {
+			$(this).parents('li').find('h4 img').show();
+		};
+		$(this).parents('div').first().slideToggle();
+		setTimeout("$throbber.hide()", 1200);
+	});
+	
 
 	/* TABS --------------------------------- */
 	/* Remove if you don't need :) */
